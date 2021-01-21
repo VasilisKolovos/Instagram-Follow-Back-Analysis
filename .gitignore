@@ -1,4 +1,4 @@
 followers.csv
 following.csv
-build
-dist
+build/Debug/MinGW-Windows
+dist/Debug/MinGW-Windows
