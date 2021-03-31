@@ -14,7 +14,7 @@ void names() {
             string line2;
             getline(file1, line1);
             getline(file2, line2);
-            int m1 = 0, m2 = 0;
+            int m1 = 0, m2 = 0, sum = 0;
             while (getline(file1, line1)) {
                 m1++;
             }
@@ -39,12 +39,15 @@ void names() {
                     }
                     else {
                         if (j == m1) {
-                            cout << line2 << endl;
+                            cout << ++sum << " " << line2 << endl;
                             file1.close();
                         }
                     }
                 }
                 file1.open("followers.csv");
+            }
+            if (sum == 0) {
+                cout << "All your followers, follow you back";
             }
         }
         else {
