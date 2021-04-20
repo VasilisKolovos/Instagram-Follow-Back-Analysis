@@ -79,6 +79,7 @@ void names() {
                     cout<< num++<< " " << out[i] << endl;
                 }
             }
+            delete[] out;
         }
         else {
             cout << "One or more files were not able to open" << endl;
